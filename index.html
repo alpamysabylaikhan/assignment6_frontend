@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment #6 - JavaScript Basics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Assignment 6</h1>
+  </header>
+
+  <main class="grid-wrapper">
+    <div class="row">
+      <section id="part1" class="part">
+        <h2>Part 1: Introduction to JavaScript</h2>
+        <div id="task1">
+          <button id="changeVarsBtn">Change Variables</button>
+
+          <div id="varOutput">
+            <p><strong>Name:</strong> <span id="nameValue"></span></p>
+            <p><strong>Age:</strong> <span id="ageValue"></span></p>
+            <p><strong>Student:</strong> <span id="studentValue"></span></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="part2" class="part">
+        <h2>Part 2: DOM Manipulation</h2>
+
+        <div id="task2">
+          <p id="text">This is original text.</p>
+          <input type="text" id="newTextInput" placeholder="Enter new text...">
+          <button id="changeTextBtn">Change Text</button>
+        </div>
+
+        <div id="task3" class="style-box">
+          <p id="styleText">Change my style!</p>
+          <button id="bgBtn">Change Background</button>
+          <button id="fontBtn">Change Font Size</button>
+        </div>
+
+        <div id="task4">
+          <ul id="list">
+            <li>Item 1</li>
+          </ul>
+          <button id="addItem">Add Item</button>
+          <button id="removeItem">Remove Item</button>
+        </div>
+      </section>
+    </div>
+
+    <div class="row">
+      <section id="part3" class="part">
+        <h2>Part 3: Events</h2>
+
+        <div id="task5">
+          <div id="colorBox">Hover over me!</div>
+        </div>
+
+        <div id="task6">
+          <input type="text" id="textInput" placeholder="Type something...">
+          <p>Current Value: <span id="output"></span></p>
+        </div>
+
+        <div id="task7">
+          <h3>Calculator</h3>
+          <input type="number" id="num1" placeholder="First number">
+          <input type="number" id="num2" placeholder="Second number">
+          <button onclick="calculate('+')">+</button>
+          <button onclick="calculate('-')">-</button>
+          <button onclick="calculate('*')">*</button>
+          <button onclick="calculate('/')">/</button>
+          <p>Result: <span id="calcResult"></span></p>
+        </div>
+      </section>
+
+      <section id="part4" class="part">
+        <h2>Part 4: Mini Project — To-Do List</h2>
+  
+        <input type="text" id="taskInput" placeholder="Enter task title">
+        <input type="text" id="descInput" placeholder="Enter task description">
+        <button id="addTaskBtn">Add Task</button>
+  
+        <ul id="taskList"></ul>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 | Alpamys Abylaikhan | All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
